@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Dohyun</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/hiphop5782/js@latest/typing/hakademy-typing.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/hiphop5782/js@latest/typing/hakademy-typing.min.js"></script>
+    <script src="https://kit.fontawesome.com/448be2c471.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="/js/prism.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            var tag = document.querySelector(".typing");
+            var app = new Hakademy.util.typing(tag, {
+                text: [
+                    "평범한 학생",
+                    "친목 서버 관리자",
+                    "개발자",
+                ]
+            });
+        });
+        document.querySelectorAll(".project").forEach(e => {
+            e.addEventListener("click", a => {
+                window.open(e.getAttribute("href"))
+            })
+        })
+    </script>
+</head>
+
+
+<body>
+    <header>
+        <div id="menu">
+            <div>
+                <a href="/" class="brand intro">Dohyun.0</a>
+                <a href="https://asked.kr/dohyun_0" class="item"><img src="/img/asked.png" alt="asked"
+                        width="26">Asked<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/HODYU1" class="item"><i class="fa-brands fa-github"></i>Github<i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <section id="intro">
+                <h1 class="name intro">Dohyun.0</h1>
+                <h4 class="language-python">print("Hello World!")</h4>
+            </section>
+
+            <section id="info">
+                <div>
+                    <div class="left title">
+                        <h1>Hello World!</h1>
+                    </div>
+                    <div class="jumpbox"></div>
+                    <div class="info">
+                        <span>안녕하세요! 저는 프로그래밍을 좋아하는 <span class="typing" , style="display: contents;">평범한
+                                학생</span>입니다.</span>
+                        <span>저는 주로 디스코드 커뮤니티에서 활동하고 있고 취미로 개발을 하고 있습니다.</span>
+                        <div class="jumpbox"></div>
+                        <span>저는 주로<i class="fa-brands fa-python"></i>파이썬을 사용하고 있습니다.</span>
+                        <span>또 다른 언어로는<i class="fa-brands fa-square-js"></i>자바스크립트와<i
+                                class="fa-brands fa-html5"></i>HTML 그리고<img src="/img/south-korea.png" alt="korean"
+                                width="16">한국어(?)를 사용하고 있습니다.</span>
+                    </div>
+                </div>
+            </section>
+            <section id="team">
+                <div class="center title">
+                    <h1>활동중인 서버</h1>
+                </div>
+                <div class="team-flex">
+                    <a href="https://discord.gg/BdWdrC2QNG" class="team-card-box">
+                        <img src="/img/이리스 가든.gif" />
+                        <div>
+                            <span class="team-card-topic">Iris Garden</span>
+                            <span class="team-card-desc">❝ 예쁜 꽃이 되렴. 누구보다도 아름다운 꽃으로. ❞</span>
+                        </div>
+                    </a>
+                    <a href="https://discord.gg/m83y5a5vyc" class="team-card-box">
+                        <img src="/img/꽃의 정원.png" />
+                        <div>
+                            <span class="team-card-topic">꽃의 정원</span>
+                            <span class="team-card-desc">The garden of flower</span>
+                        </div>
+                    </a>
+                    <a href="https://discord.gg/DaeXjt4sHw" class="team-card-box">
+                        <img src="/img/구인구직.png" />
+                        <div>
+                            <span class="team-card-topic">月구인구직</span>
+                            <span class="team-card-desc">각 서버의 구인구직을 모은 곳입니다.</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </article>
+    </main>
+    <div style="margin-bottom: 100px;"></div>
+</body>
+
+</html>
