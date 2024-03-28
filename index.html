@@ -14,6 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <script src="/js/prism.js"></script>
     <script>
+
         window.addEventListener("load", function () {
             var tag = document.querySelector(".typing");
             var app = new Hakademy.util.typing(tag, {
@@ -21,53 +22,84 @@
                     "평범한 학생",
                     "친목 서버 관리자",
                     "개발자",
-                ]
+                ],
+                cursor: {
+                    display: false
+                }
             });
         });
-        document.querySelectorAll(".project").forEach(e => {
-            e.addEventListener("click", a => {
-                window.open(e.getAttribute("href"))
-            })
-        })
+        window.addEventListener("load", function () {
+            var tag = document.querySelector(".code-block");
+            var app = new Hakademy.util.typing(tag, {
+                text: [
+                    "print(\"Hello World!\")",
+                    "console.log(\"Hello World!\");",
+                    "System.out.print(\"Hello World!\");",
+                ],
+                cursor: {
+                    display: false
+                }
+            });
+        });
+        window.addEventListener("load", function () {
+            var toggleBtn = document.querySelector(".navbar-toogleBtn");
+            var menu = document.querySelector(".navbar-menu");
+            toggleBtn.addEventListener('click', () => {
+                menu.classList.toggle('active')
+            });
+        });
     </script>
 </head>
 
 
 <body>
-    <header>
-        <div id="menu">
-            <div>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a class="navbar-brand intro" href="/">dohyun.0</a>
+        </div>
+        <ul class="navbar-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="/#main">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/#team">Team</a>
+            </li>
+        </ul>
+        <a class="navbar-toogleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+    <!-- <div>
                 <a href="/" class="brand intro">Dohyun.0</a>
                 <a href="https://asked.kr/dohyun_0" class="item"><img src="/img/asked.png" alt="asked"
                         width="26">Asked<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 <a href="https://github.com/HODYU1" class="item"><i class="fa-brands fa-github"></i>Github<i
                         class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-        </div>
-    </header>
+            </div> -->
 
     <main>
         <article>
-            <section id="intro">
+            <section id="main">
                 <h1 class="name intro">Dohyun.0</h1>
-                <h4 class="language-python">print("Hello World!")</h4>
+                <h4 class="code-block">print("Hello World!")</h4>
             </section>
 
-            <section id="info">
+            <section id="about">
                 <div>
                     <div class="left title">
                         <h1>Hello World!</h1>
                     </div>
                     <div class="jumpbox"></div>
                     <div class="info">
-                        <span>안녕하세요! 저는 프로그래밍을 좋아하는 <span class="typing" , style="display: contents;">평범한
+                        <span>안녕하세요! 저는 프로그래밍을 좋아하는 <span class="typing">평범한
                                 학생</span>입니다.</span>
                         <span>저는 주로 디스코드 커뮤니티에서 활동하고 있고 취미로 개발을 하고 있습니다.</span>
                         <div class="jumpbox"></div>
-                        <span>저는 주로<i class="fa-brands fa-python"></i>파이썬을 사용하고 있습니다.</span>
-                        <span>또 다른 언어로는<i class="fa-brands fa-square-js"></i>자바스크립트와<i
-                                class="fa-brands fa-html5"></i>HTML 그리고<img src="/img/south-korea.png" alt="korean"
-                                width="16">한국어(?)를 사용하고 있습니다.</span>
+                        <span>저는 주로 <i class="fa-brands fa-python"></i> Python을 사용하고 있습니다.</span>
+                        <span>또 다른 언어로는 <i class="fa-brands fa-square-js"></i> Javascript, <i class="fa-brands fa-java"></i> Java, <i class="fa-brands fa-html5"></i> HTML을 사용하고 있습니다</span>
                     </div>
                 </div>
             </section>
@@ -76,11 +108,11 @@
                     <h1>활동중인 서버</h1>
                 </div>
                 <div class="team-flex">
-                    <a href="https://discord.gg/BdWdrC2QNG" class="team-card-box">
-                        <img src="/img/이리스 가든.gif" />
+                    <a href="https://discord.gg/dawn-inc" class="team-card-box">
+                        <img src="/img/dawn-inc.gif" />
                         <div>
-                            <span class="team-card-topic">Iris Garden</span>
-                            <span class="team-card-desc">❝ 예쁜 꽃이 되렴. 누구보다도 아름다운 꽃으로. ❞</span>
+                            <span class="team-card-topic">Dawn Inc.</span>
+                            <span class="team-card-desc">본 서버는 회사 컨셉의 친목 서버 입니다.</span>
                         </div>
                     </a>
                     <a href="https://discord.gg/m83y5a5vyc" class="team-card-box">
@@ -101,7 +133,7 @@
             </section>
         </article>
     </main>
-    <div style="margin-bottom: 100px;"></div>
+    <div style="margin-bottom: 1000px;"></div>
 </body>
 
 </html>
