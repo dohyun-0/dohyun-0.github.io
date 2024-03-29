@@ -6,127 +6,48 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <link rel="stylesheet" href="style.css">
-    <title>Dohyun</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/gh/hiphop5782/js@latest/typing/hakademy-typing.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/hiphop5782/js@latest/typing/hakademy-typing.min.js"></script>
+    <title>도현 | dohyun.0</title>
     <script src="https://kit.fontawesome.com/448be2c471.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-    <script>
-
-        window.addEventListener("load", function () {
-            var tag = document.querySelector(".typing");
-            var app = new Hakademy.util.typing(tag, {
-                text: [
-                    "평범한 학생",
-                    "친목 서버 관리자",
-                    "개발자",
-                ],
-                cursor: {
-                    display: false
-                }
-            });
-        });
-        window.addEventListener("load", function () {
-            var tag = document.querySelector(".code-block");
-            var app = new Hakademy.util.typing(tag, {
-                text: [
-                    "print(\"Hello World!\")",
-                    "console.log(\"Hello World!\");",
-                    "System.out.print(\"Hello World!\");",
-                ],
-                cursor: {
-                    display: false
-                }
-            });
-        });
-        window.addEventListener("load", function () {
-            var toggleBtn = document.querySelector(".navbar-toogleBtn");
-            var menu = document.querySelector(".navbar-menu");
-            toggleBtn.addEventListener('click', () => {
-                menu.classList.toggle('active')
-            });
-        });
-    </script>
 </head>
 
 
 <body>
-    <nav class="navbar">
-        <div class="navbar-logo">
-            <a class="navbar-brand intro" href="/">dohyun.0</a>
+    <header class="navbar">
+        <div class="logo intro" style="padding-left: 5%;">dohyun.0</div>
+        <div class="menu" style="padding-right: 5%;">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Team</a>
         </div>
-        <ul class="navbar-menu">
-            <li class="nav-item">
-                <a class="nav-link" href="/#main">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/#about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/#team">Team</a>
-            </li>
-        </ul>
-        <a class="navbar-toogleBtn">
-            <i class="fas fa-bars"></i>
-        </a>
-    </nav>
-    <main>
-        <article>
-            <section id="main">
-                <h1 class="name intro">Dohyun.0</h1>
-                <h4 class="code-block">print("Hello World!")</h4>
-            </section>
+    </header>
 
-            <section id="about">
-                <div>
-                    <div class="left title">
-                        <h1>Hello World!</h1>
-                    </div>
-                    <div class="jumpbox"></div>
-                    <div class="info">
-                        <span>안녕하세요! 저는 프로그래밍을 좋아하는 <span class="typing">평범한
-                                학생</span>입니다.</span>
-                        <span>저는 주로 디스코드 커뮤니티에서 활동하고 있고 취미로 개발을 하고 있습니다.</span>
-                        <div class="jumpbox"></div>
-                        <span>저는 주로 <i class="fa-brands fa-python"></i> Python을 사용하고 있습니다.</span>
-                        <span>또 다른 언어로는 <i class="fa-brands fa-square-js"></i> Javascript, <i
-                                class="fa-brands fa-java"></i> Java, <i class="fa-brands fa-html5"></i> HTML을 사용하고
-                            있습니다</span>
-                    </div>
-                </div>
-            </section>
-            <section id="team">
-                <div class="center title">
-                    <h1>활동중인 서버</h1>
-                </div>
-                <div class="team-flex">
-                    <a href="https://discord.gg/dawn-inc" class="team-card-box">
-                        <img src="/img/dawn-inc.gif" />
-                        <div>
-                            <span class="team-card-topic">Dawn Inc.</span>
-                            <span class="team-card-desc">본 서버는 회사 컨셉의 친목 서버 입니다.</span>
-                        </div>
-                    </a>
-                    <a href="https://discord.gg/m83y5a5vyc" class="team-card-box">
-                        <img src="/img/꽃의 정원.png" />
-                        <div>
-                            <span class="team-card-topic">꽃의 정원</span>
-                            <span class="team-card-desc">The garden of flower</span>
-                        </div>
-                    </a>
-                    <a href="https://discord.gg/DaeXjt4sHw" class="team-card-box">
-                        <img src="/img/구인구직.png" />
-                        <div>
-                            <span class="team-card-topic">月구인구직</span>
-                            <span class="team-card-desc">각 서버의 구인구직을 모은 곳입니다.</span>
-                        </div>
-                    </a>
-                </div>
-            </section>
-        </article>
+    <main class="flex h-[95vh] w-full items-center justify-center text-left">
+        <div class="flex-col flex h-[95vh] w-full items-center justify-center text-left"> <img alt="Profile"
+                loading="lazy" width="128" height="128" decoding="async" data-nimg="1" class="avatar"
+                style="color:transparent" src="/img/profile.jpg" />
+            <div class="flex flex-row justify-center ">
+                <h1 class="text-4xl font-black">도현</h1>
+                <h2 class="mt-[20px] text-[10pt] text-gray-400">@dohyun.0</h2>
+            </div>
+            <div class="flex flex-row justify-center ">
+                <p>Team. <span class="team-items" href="">Dawn inc</span> | Discord Bot Developer</p>
+            </div>
+        </div>
     </main>
-    <div style="margin-bottom: 100px;"></div>
 </body>
 
 </html>
+<script>
+    var items = document.querySelector(".team-items");
+    list_item = ["Dawn inc", "月구인구직", "꽃의 정원"]
+    var i = 0
+    const team_changer = () => {
+        items.style.opacity = 0; // 변경 전 투명도 설정
+        setTimeout(() => {
+            items.innerHTML = list_item[i++ % list_item.length];
+            items.style.opacity = 1; // 변경 후 투명도 설정
+        }, 300); // 300밀리초 후 변경
+        setTimeout(team_changer, 3000); // 3초마다 함수 재호출
+    }
+    team_changer();
+</script>
