@@ -129,12 +129,6 @@ main {
     }
 }
 
-main {
-    >.info {
-        flex-direction: column;
-    }
-}
-
 .desc {
     flex-direction: column;
     padding: 0 30px;
