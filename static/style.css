@@ -128,6 +128,7 @@ main {
         color: #9f9f9f;
     }
 }
+
 main {
     >.info {
         flex-direction: column;
@@ -137,6 +138,7 @@ main {
 .desc {
     flex-direction: column;
     padding: 0 30px;
+
     >ul>li {
         list-style: none;
     }
@@ -173,10 +175,6 @@ main {
     opacity: 1;
 }
 
-.hover-text:hover #delay {
-    opacity: 1;
-}
-
 
 .hover-text {
     position: relative;
@@ -184,23 +182,6 @@ main {
     text-align: center;
 }
 
-table {
-    border-collapse: collapse;
-    margin-top: 35px;
-    width: 35%;
-    table-layout: fixed;
-}
-
-th,
-td {
-    padding: 10px 10px;
-    border: 1px solid rgb(47, 47, 47);
-    outline: 0;
-}
-
-tr:nth-child(1) {
-    background-color: rgb(40, 40, 40);
-}
 
 @media (max-width: 700px) {
     .main-info {
@@ -210,5 +191,5 @@ tr:nth-child(1) {
     .desc {
         padding: 0;
     }
-    
+
 }
