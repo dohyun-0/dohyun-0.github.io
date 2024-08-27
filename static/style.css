@@ -137,7 +137,7 @@ main {
 .desc {
     flex-direction: column;
     padding: 0 30px;
-    >.box-2>ul>li {
+    >ul>li {
         list-style: none;
     }
 }
@@ -200,4 +200,15 @@ td {
 
 tr:nth-child(1) {
     background-color: rgb(40, 40, 40);
+}
+
+@media (max-width: 700px) {
+    .main-info {
+        display: block;
+    }
+
+    .desc {
+        padding: 0;
+    }
+    
 }
