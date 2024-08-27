@@ -138,10 +138,10 @@ main {
 .desc {
     flex-direction: column;
     padding: 0 30px;
+}
 
-    >ul>li {
-        list-style: none;
-    }
+li {
+    list-style: none;
 }
 
 .sns {
