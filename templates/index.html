@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://kit.fontawesome.com/448be2c471.js" crossorigin="anonymous"></script>
+    <title>도현 | dohyun.0</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container flex justify-center align-center">
+                <ul class="navbar__menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="https://github.com/dohyun-0">Github</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="profile justify-center align-center">
+            <div class="img-container">
+                <img src="../static/img/profile.jpeg" alt="" id="img">
+            </div>
+            <div class="info justify-center align-center text-center">
+                <div class="header">
+                    <h1>깅도현</h1>
+                    <h4>@dohyun.0</h4>
+                </div>
+            </div>
+            <div class="subtitle">
+                <h3>Hello World! I'm a <span id="scramble"></span></h3>
+            </div>
+            <div class="sns">
+                <span>
+                    <a href="https://github.com/dohyun-0">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                </span>
+                <span class="hover-text">
+                    <i class="fa-brands fa-discord fa-2xl"></i>
+                    <p class="tooltip-text" id="fade">dohyun.0</p>
+                </span>
+            </div>
+        </div>
+    </main>
+    <script src="../static/js/dynamicImage.js"></script>
+    <script src="../static/js/scramble.js"></script>
+</body>
+
+</html>
