@@ -11,7 +11,8 @@ body {
     min-height: 100vh;
 }
 
-span, p {
+span,
+p {
     word-break: keep-all;
     white-space: pre-line;
 }
@@ -73,7 +74,7 @@ span, p {
     gap: 10px;
 }
 
-.profile-horizontal h1 {
+.profile-horizontal .info h1 {
     margin: 0;
     font-size: 1.8rem;
 }
@@ -169,7 +170,6 @@ div.projects>a img {
 div.projects>a div {
     display: flex;
     flex-direction: column;
-    gap: 5px;
 }
 
 div.projects>a h3 {
@@ -178,7 +178,7 @@ div.projects>a h3 {
 }
 
 div.projects>a p {
-    margin: 5px 0 0 0;
+    margin: 0;
     font-size: 0.9rem;
 }
 
@@ -206,5 +206,16 @@ div.projects>a p {
         align-items: center;
         font-size: 0.9rem;
         color: #fff;
+    }
+
+    div.projects>a div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+ 
+    div.projects>a p {
+        margin: 5px 0 0 0;
+        font-size: 0.9rem;
     }
 }
